@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f4f8;
+            color: #222;
+            margin: 0;
+            padding: 40px 16px;
+        }
+        h1 {
+            text-align: center;
+            color: #1a3d6d;
+            margin-bottom: 24px;
+        }
+        form {
+            max-width: 420px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 28px 32px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 15px;
+            border: 1px solid #c5cdd6;
+            border-radius: 6px;
+            outline: none;
+        }
+        input:focus, select:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+        }
+        input::placeholder {
+            color: #999;
+        }
+        input[readonly] {
+            background-color: #e9edf2;
+            color: #555;
+            cursor: not-allowed;
+        }
+        input[type="file"] {
+            padding: 8px;
+            background-color: #fafafa;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #1a73e8;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #155ab6;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" placeholder="Your First Name" required>
+        <br>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text" placeholder="Your Last Name" required>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Your Email" required>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="Your Password" required>
+        <br>
+        <br>
+        <label for="campus">Campus:</label>
+        <input id="campus" readonly value="Sushant University"></input>
+        <br>
+        <br>
+        <label for="Gender">Gender:</label>
+        <select id="Gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
+        <label for="mobile">Mobile:</label>
+        <input id="mobile" type="number" placeholder="Your Mobile Number" required>
+        <br>
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input id="dob" type="date">
+        <br>
+        <br>
+        <label for="Profile Pic">Profile Pic:</label>
+        <input id="Profile Pic" type="file">
+        <br>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

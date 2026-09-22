@@ -1,0 +1,15 @@
+#External {
+    color:green;
+}
+.Harry {
+    color: purple;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f0e6ff;
+    padding: 10px;
+    border-left: 4px solid purple;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
