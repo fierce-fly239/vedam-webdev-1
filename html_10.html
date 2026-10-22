@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .big {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            height: 400px;
+            width: 400px;
+            Background-color: gray;
+            animation-name: container-rotator;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;  
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation-name: box-mover;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes box-mover {
+            0% {
+                transform: translate(0px, 0px);
+            }
+            25% {
+                transform: translate(300px, 0px);
+            }
+            50% {
+                transform: translate(300px, 300px);
+                border-radius: 50%;
+            }
+            75% {
+                transform: translate(0px, 300px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+        @keyframes container-rotator {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(180deg);
+                opacity: 0.2;
+            }
+            75% {
+                transform: rotate(270deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <div class = "big">
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
